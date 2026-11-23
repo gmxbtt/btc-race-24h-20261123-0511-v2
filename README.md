@@ -1,5 +1,9 @@
 # Tidewalker — a two-stage trend rider for the cbBTC 24h race
 
+[![make.fun · btc-race-24h-20261123-0511](https://make.fun/badge/btc-race-24h-20261123-0511.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![rank](https://make.fun/badge/btc-race-24h-20261123-0511/gmxbtt/btc-race-24h-20261123-0511-v2/rank.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![reward](https://make.fun/badge/btc-race-24h-20261123-0511/gmxbtt/btc-race-24h-20261123-0511-v2/reward.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+
 Entry for [btc-race-24h-20261123-0511](https://make.fun/bounty/btc-race-24h-20261123-0511)
 on make.fun: a bot that trades Coinbase Wrapped BTC (cbBTC) against USDC,
 minute by minute, on 1-minute on-chain bars, starting with $1,000 of paper
