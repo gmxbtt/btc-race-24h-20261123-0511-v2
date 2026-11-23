@@ -41,6 +41,13 @@ backwards — a −3.6% downtrend mirror — it loses only −$19.34, against
 −$35 for buy-and-hold; on ten shuffled-return copies of the window (same
 total drift, trend destroyed) it averages +$25.14 and never loses money.
 
+End-to-end verification: the bot itself, run through the real protocol
+shim against the dev bars with the harness's fill model, scores **+$31.79**
+(3 trades, max drawdown 1.98%, exit code 0) — identical to the simulator
+to the cent. (The kit's `grade-local --driver process` cannot run Python
+bots — it needs Docker, which this machine has not — so the protocol-level
+replay above is the local verification.)
+
 ## Files
 
 - `main.py` — the bot (Python 3.13, standard library only). Speaks
