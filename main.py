@@ -113,13 +113,13 @@ class Tidewalker:
         orders = []
         if stage == 0:
             if r30 is not None and r30 > ENTRY_R30 and close > ema_now and ema_slope > 0:
-                amount = state.cash * FIRST_FRACTION // 1
+                amount = int(state.cash * FIRST_FRACTION)
                 if amount >= MIN_NOTIONAL:
                     orders.append(
                         {
                             "side": "buy",
                             "symbol": SYMBOL,
-                            "notional_quote_units": int(amount),
+                            "notional_quote_units": amount,
                             "max_slippage_bps": MAX_SLIPPAGE_BPS,
                         }
                     )
@@ -148,6 +148,7 @@ class Tidewalker:
                 and r120 > CONFIRM_R120
                 and close > ema_now
                 and state.cash >= MIN_NOTIONAL
+                and state.cash * 20 >= state.equity  # top up only real cash (5%+)
             ):
                 orders.append(
                     {
